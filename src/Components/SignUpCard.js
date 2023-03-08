@@ -12,6 +12,8 @@ const SignUpCard = () => {
         return signup.email === params.email
     });
 
+    console.log(foundSignup);
+
     // return details of contact 
     return (
         <div>

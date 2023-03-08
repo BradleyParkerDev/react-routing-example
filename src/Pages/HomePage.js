@@ -4,8 +4,8 @@ import { useOutletContext } from "react-router-dom";
 
 const HomePage = () => {
 
-    const context = useOutletContext();
-    console.log(context);
+    // const context = useOutletContext();
+    // // console.log(context);
 
     return (
         <div>

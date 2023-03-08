@@ -7,8 +7,9 @@ const SignupsPage = () => {
     const [signupList] = useOutletContext();
     const navigate = useNavigate();
 
-    console.log(signupList);
+    // console.log(signupList);
 
+    //outlet allows us to render child elements 
     return (
         <div>
             <h1> Signups Page</h1>
@@ -20,7 +21,8 @@ const SignupsPage = () => {
                         return (<option value={signup.email}>{signup.firstName}</option>)
                     })}
                 </select>
-                {/* <Outlet context={[signupList]} /> */}
+                
+                <Outlet context={[signupList]} />
         </div>
     )
 }
