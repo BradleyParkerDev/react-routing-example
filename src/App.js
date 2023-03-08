@@ -21,10 +21,8 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <Outlet context={[signupList, handleAddSignUp]}/>
-      </header>
+    <div className="App-header">
+       <Outlet context={[signupList, handleAddSignUp]}/>
     </div>
   );
 }

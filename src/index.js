@@ -4,6 +4,7 @@ import HomePage from "./Pages/HomePage"
 import AboutPage from "./Pages/AboutPage"
 import ContactPage from "./Pages/ContactPage"
 import SignupsPage from "./Pages/SignupsPage"
+import SignUpCard from "./Components/SignUpCard"
 import App from './App'
 import {
   createBrowserRouter,
@@ -30,7 +31,13 @@ const router = createBrowserRouter([
       },
       {
         path: "/signups",
-        element: <SignupsPage />
+        element: <SignupsPage />,
+        children: [
+          {
+          path: "/signups/:email",
+          element: <SignUpCard />
+          }
+        ]
       }
     ]
 

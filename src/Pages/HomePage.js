@@ -6,7 +6,6 @@ const HomePage = () => {
 
     const context = useOutletContext();
     console.log(context);
-    
 
     return (
         <div>

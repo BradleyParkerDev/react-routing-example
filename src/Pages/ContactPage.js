@@ -35,7 +35,7 @@ const ContactPage = () => {
             <br/>
             <button onClick={() => {
                 handleAddSignUp(firstName, lastName, email)
-                navigate("/")
+                navigate("/signups")
             }}>Submit</button>
         </div>
     )
