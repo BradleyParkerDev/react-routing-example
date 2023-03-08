@@ -11,6 +11,9 @@ const SignupsPage = () => {
             <h1> Signups Page</h1>
                 <select onChange={(e) => {}}>
                     <option></option>
+                    {signupList.map((signup)=> {
+                        return (<option value={signup.email}>{signup.firstName}</option>)
+                    })}
                 </select>
         </div>
     )

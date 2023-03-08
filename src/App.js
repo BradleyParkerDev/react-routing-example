@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import { useState } from "react";
 
+//using react-router's built in context provider
+// that makes the context accessible to all child routes across the application
 import { Outlet } from "react-router-dom";
 
 function App() {
