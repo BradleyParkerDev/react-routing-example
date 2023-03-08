@@ -6,6 +6,8 @@ import { useState } from "react";
 // that makes the context accessible to all child routes across the application
 import { Outlet } from "react-router-dom";
 
+import NavBar  from './Components/NavBar';
+
 function App() {
 
   const [signupList, setSignupList] = useState([]);
@@ -22,6 +24,7 @@ function App() {
 
   return (
     <div className="App-header">
+       <NavBar />
        <Outlet context={[signupList, handleAddSignUp]}/>
     </div>
   );
